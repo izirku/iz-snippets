@@ -1,0 +1,26 @@
+{
+  "axum-extractor": {
+    "prefix": "axum-extractor",
+    "body": [
+      "use axum::{async_trait, extract::FromRequest, http::StatusCode};",
+      "",
+      "#[derive(Debug)]",
+      "pub struct ${1:MyExtractor};",
+      "",
+      "#[async_trait]",
+      "impl<B> FromRequest<B> for ${1:MyExtractor}",
+      "where",
+      "    B: Send,",
+      "{",
+      "    type Rejection = StatusCode;",
+      "",
+      "    async fn from_request(",
+      "        req: &mut axum::extract::RequestParts<B>,",
+      "    ) -> Result<Self, Self::Rejection> {",
+      "        ${2:unimplemented!()}",
+      "    }",
+      "}"
+    ],
+    "description": "Axum extractor template"
+  }
+}
