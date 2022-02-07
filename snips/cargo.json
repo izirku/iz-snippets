@@ -1,0 +1,14 @@
+{
+  "cargo-workspace": {
+    "prefix": "cargo-workspace",
+    "body": [
+      "[workspace]",
+      "members = [\"${1:folder_name}\"]",
+      "",
+      "[profile.release]",
+      "codegen-units = 1",
+      "lto = true"
+    ],
+    "descrition": "cargo workspace template"
+  }
+}

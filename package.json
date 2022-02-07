@@ -12,8 +12,20 @@
   "contributes": {
     "snippets": [
       {
+        "language": "toml",
+        "path": "./snips/cargo.json"
+      },
+      {
         "language": "rust",
         "path": "./snips/axum.json"
+      },
+      {
+        "language": "rust",
+        "path": "./snips/yew.json"
+      },
+      {
+        "language": "json",
+        "path": "./snips/json.json"
       }
     ]
   }

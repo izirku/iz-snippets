@@ -1,0 +1,18 @@
+{
+  "snip-vscode": {
+    "prefix": "snip-vscode",
+    "body": [
+      "{",
+      "  \"${1:name-prefix}\": {",
+      "    \"description\": \"${2:description here}\",",
+      "    \"prefix\": \"${1:name-prefix}\",",
+      "    \"body\": [",
+      "      \"${3:body}\"",
+      "    ]",
+      "  }",
+      "}"
+    ],
+    "descrition": "vscode snippet template"
+  }
+}
+
